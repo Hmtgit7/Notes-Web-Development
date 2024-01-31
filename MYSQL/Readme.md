@@ -37,3 +37,10 @@ commands:
 #### CLAUSES
 
 1. WHERE : SELECT *(columnname) FROM < table_name > WHERE = (condition);
+
+
+## Primary Key:
+            1. The primary key constraints uniquely identifies each record in a table.
+            2. Primary key must contain unique values and cannot contain NULL values.
+            3. A table can have only one primary key.
+
