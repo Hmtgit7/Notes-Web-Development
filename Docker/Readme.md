@@ -19,3 +19,8 @@ docker
 the process of exposing the process running inside of the container is called porting.
 
 docker run -it -p < Container PORT > : < LocalMachine PORT > < Image Name >
+
+
+Enviroment variable
+
+docker run -it -p < Container PORT > : < LocalMachine PORT > -e key=value -e key=value < Image Name >
