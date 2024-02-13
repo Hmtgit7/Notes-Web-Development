@@ -33,6 +33,36 @@ commands:
 15. CREATE TABLE < table_name> ( column1name datatype(size) NOT NULL, column2name datatype.......);
 
 16. CREATE TABLE < table_name> ( column1name datatype(size) DEFAULT ( 'value' ), column2name datatype.......);
+    
+    e.g.
+       CREATE TABLE customer(
+                name VARCHAR(50),
+                acc_type VARCHAR(100) DEFAULT 'Saving'
+               );
+
+17. i.  CREATE TABLE table_name(
+                column1name datatype PRIMARY KEY,
+                column1name datatype.........
+               );
+    ii. CREATE TABLE table_name(
+                column1name datatype,
+                column1name datatype.........,
+                PRIMARY KEY(columnname)
+               );
+
+18. CREATE TABLE table_name(
+                column1name datatype PRIMARY KEY AUTO_INCREAMENT,
+                column1name datatype.........,
+                PRIMARY KEY(columnname)
+               );
+
+19. SELECT columnname AS ('alias_name') FROM (table_name);
+    
+    e.g. 
+      SELECT acc_no AS 'Account No.' 
+
+20. 
+
 
 #### CLAUSES
 
@@ -43,4 +73,20 @@ commands:
             1. The primary key constraints uniquely identifies each record in a table.
             2. Primary key must contain unique values and cannot contain NULL values.
             3. A table can have only one primary key.
+
+            e.g. 
+               CREATE TABLE customer(
+                acc_no INT PRIMARY KEY,
+                name VARCHAR(100) NOT NULL,
+                acc_type VARCHAR(50) NOT NULL DEFAULT '( VALUE)'
+               );
+
+            CREATE TABLE customer(
+                acc_no INT,
+                name VARCHAR(100) NOT NULL,
+                acc_type VARCHAR(50) NOT NULL DEFAULT '( VALUE)',
+                PRIMARY KEY(acc_no)
+               );
+
+## Foreign Key:
 
