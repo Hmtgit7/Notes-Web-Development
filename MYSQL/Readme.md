@@ -68,6 +68,9 @@ commands:
 
 1. WHERE : SELECT *(columnname) FROM < table_name > WHERE = (condition);
 
+    e.g.
+        SELECT name FROM employee WHERE student_id==18;
+
 
 ## Primary Key:
             1. The primary key constraints uniquely identifies each record in a table.
@@ -89,4 +92,3 @@ commands:
                );
 
 ## Foreign Key:
-
